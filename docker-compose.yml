@@ -1,0 +1,51 @@
+version: "3.9"
+
+services:
+  api1:
+    build:
+      context: .
+      dockerfile: L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
+      DisableHttpsRedirection: "true"
+      INSTANCE_NAME: api1
+    volumes:
+      - exchange-data:/data
+    networks:
+      - exchange-net
+    ports:
+      - "8081:8080"
+
+  api2:
+    build:
+      context: .
+      dockerfile: L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
+      DisableHttpsRedirection: "true"
+      INSTANCE_NAME: api2
+    volumes:
+      - exchange-data:/data
+    networks:
+      - exchange-net
+    ports:
+      - "8082:8080"
+
+  nginx:
+    build:
+      context: ./nginx
+    depends_on:
+      - api1
+      - api2
+    ports:
+      - "8080:8080"
+    networks:
+      - exchange-net
+
+volumes:
+  exchange-data:
+
+networks:
+  exchange-net:

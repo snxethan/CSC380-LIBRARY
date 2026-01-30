@@ -1,5 +1,6 @@
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,16 +17,34 @@ builder.Services.AddDbContext<ExchangeDbContext>(options =>
 
 var app = builder.Build();
 
-// 4) Swagger middleware (only in Development)
+var disableHttpsRedirection = builder.Configuration.GetValue<bool>("DisableHttpsRedirection");
+var instanceName = builder.Configuration["InstanceName"] ?? Environment.GetEnvironmentVariable("INSTANCE_NAME") ?? "api";
+
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();          // exposes /swagger/{doc}/swagger.json
-    app.UseSwaggerUI();        // exposes /swagger and /swagger/index.html
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (!disableHttpsRedirection)
+{
+    app.UseHttpsRedirection();
+}
+
+app.Use(async (context, next) =>
+{
+    context.Response.Headers["X-Instance-Name"] = instanceName;
+    await next();
+});
 
 app.UseAuthorization();
+
+// Ensure DB is created/migrated
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<ExchangeDbContext>();
+    db.Database.Migrate();
+}
 
 // 5) Map controllers
 app.MapControllers();

@@ -16,5 +16,7 @@
 
         // Navigation
         public User Owner { get; set; } = default!;
+        public ICollection<TradeOffer> RequestedInOffers { get; set; } = new List<TradeOffer>();
+        public ICollection<TradeOffer> OfferedInOffers { get; set; } = new List<TradeOffer>();
     }
 }

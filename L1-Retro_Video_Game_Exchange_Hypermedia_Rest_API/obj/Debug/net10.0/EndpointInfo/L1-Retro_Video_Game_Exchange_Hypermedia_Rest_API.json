@@ -288,6 +288,55 @@
         }
       }
     },
+    "/api/Games/others/{userId}": {
+      "get": {
+        "tags": [
+          "Games"
+        ],
+        "parameters": [
+          {
+            "name": "userId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GameDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/users/{userId}/games": {
       "get": {
         "tags": [
@@ -330,6 +379,229 @@
                   "items": {
                     "$ref": "#/components/schemas/GameDto"
                   }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TradeOffers": {
+      "post": {
+        "tags": [
+          "TradeOffers"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferCreateDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferCreateDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferCreateDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TradeOffers/{id}": {
+      "get": {
+        "tags": [
+          "TradeOffers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TradeOffers/incoming": {
+      "get": {
+        "tags": [
+          "TradeOffers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TradeOffers/outgoing": {
+      "get": {
+        "tags": [
+          "TradeOffers"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TradeOfferDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TradeOffers/{id}/respond": {
+      "patch": {
+        "tags": [
+          "TradeOffers"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferRespondDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferRespondDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TradeOfferRespondDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TradeOfferDto"
                 }
               }
             }
@@ -713,6 +985,71 @@
         },
         "additionalProperties": false
       },
+      "TradeOfferCreateDto": {
+        "type": "object",
+        "properties": {
+          "requestedGameId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "offeredGameId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TradeOfferDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "requestedGameId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "offeredGameId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "requesterUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "ownerUserId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAtUtc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "links": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LinkDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TradeOfferRespondDto": {
+        "type": "object",
+        "properties": {
+          "decision": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UserCreateDto": {
         "type": "object",
         "properties": {
@@ -783,6 +1120,9 @@
   "tags": [
     {
       "name": "Games"
+    },
+    {
+      "name": "TradeOffers"
     },
     {
       "name": "Users"

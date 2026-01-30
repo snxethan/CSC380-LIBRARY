@@ -11,5 +11,7 @@
 
         // Navigation: one user owns many games
         public ICollection<Game> Games { get; set; } = new List<Game>();
+        public ICollection<TradeOffer> SentOffers { get; set; } = new List<TradeOffer>();
+        public ICollection<TradeOffer> ReceivedOffers { get; set; } = new List<TradeOffer>();
     }
 }

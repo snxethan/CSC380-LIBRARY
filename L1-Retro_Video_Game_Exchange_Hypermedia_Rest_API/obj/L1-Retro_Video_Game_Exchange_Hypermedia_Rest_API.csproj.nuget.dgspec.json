@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\M2\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj": {}
+    "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj": {}
   },
   "projects": {
-    "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\M2\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj": {
+    "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\M2\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
+        "projectUniqueName": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
         "projectName": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API",
-        "projectPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\M2\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
+        "projectPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
         "packagesPath": "C:\\Users\\Ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\M2\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\obj\\",
+        "outputPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

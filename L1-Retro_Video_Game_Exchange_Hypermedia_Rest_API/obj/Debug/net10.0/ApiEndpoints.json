@@ -166,6 +166,155 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.GamesController",
+    "Method": "GetGamesNotOwnedByUser",
+    "RelativePath": "api/Games/others/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.GameDto, L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOffersController",
+    "Method": "CreateTradeOffer",
+    "RelativePath": "api/TradeOffers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOffersController",
+    "Method": "GetTradeOfferById",
+    "RelativePath": "api/TradeOffers/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOffersController",
+    "Method": "RespondToOffer",
+    "RelativePath": "api/TradeOffers/{id}/respond",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferRespondDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOffersController",
+    "Method": "GetIncomingOffers",
+    "RelativePath": "api/TradeOffers/incoming",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferDto, L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOffersController",
+    "Method": "GetOutgoingOffers",
+    "RelativePath": "api/TradeOffers/outgoing",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.TradeOfferDto, L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers.UsersController",
     "Method": "GetUsers",
     "RelativePath": "api/Users",
