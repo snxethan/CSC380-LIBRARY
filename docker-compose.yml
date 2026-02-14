@@ -10,6 +10,8 @@ services:
       ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
       DisableHttpsRedirection: "true"
       INSTANCE_NAME: api1
+      Kafka__BootstrapServers: kafka:9092
+      Kafka__Topic: notifications
     volumes:
       - exchange-data:/data
     networks:
@@ -26,6 +28,8 @@ services:
       ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
       DisableHttpsRedirection: "true"
       INSTANCE_NAME: api2
+      Kafka__BootstrapServers: kafka:9092
+      Kafka__Topic: notifications
     volumes:
       - exchange-data:/data
     networks:
@@ -41,6 +45,41 @@ services:
       - api2
     ports:
       - "8080:8080"
+    networks:
+      - exchange-net
+
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    networks:
+      - exchange-net
+
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    networks:
+      - exchange-net
+
+  notification-worker:
+    build:
+      context: .
+      dockerfile: NotificationWorker/Dockerfile
+    depends_on:
+      - kafka
+    environment:
+      Kafka__BootstrapServers: kafka:9092
+      Kafka__Topic: notifications
     networks:
       - exchange-net
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+757209a50619671020fe520fa8ea3caeb2f0b727")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e68a3268a29dc4185903a6223dfdc9a0701f9491")]
 [assembly: System.Reflection.AssemblyProductAttribute("L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

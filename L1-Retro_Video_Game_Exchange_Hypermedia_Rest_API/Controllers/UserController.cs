@@ -1,10 +1,13 @@
 ﻿using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Data;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.DTOs;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Models;
+using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
@@ -14,10 +17,12 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
     public class UsersController : ControllerBase
     {
         private readonly ExchangeDbContext _db;
+        private readonly INotificationProducer _notificationProducer;
 
-        public UsersController(ExchangeDbContext db)
+        public UsersController(ExchangeDbContext db, INotificationProducer notificationProducer)
         {
             _db = db;
+            _notificationProducer = notificationProducer;
         }
 
 
@@ -77,6 +82,36 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             }
 
             return Ok(ToUserDto(user));
+        }
+
+        // PATCH api/users/{id}/password
+        [HttpPatch("{id:int}/password")]
+        public async Task<IActionResult> ChangePassword(int id, UserPasswordUpdateDto dto)
+        {
+            var authenticatedUser = await AuthenticateAsync();
+            if (authenticatedUser == null)
+                return UnauthorizedResult();
+
+            if (authenticatedUser.Id != id)
+                return StatusCode(403, new { error = "Forbidden." });
+
+            if (string.IsNullOrWhiteSpace(dto.NewPassword))
+                return BadRequest(new { error = "New password is required." });
+
+            if (!string.Equals(authenticatedUser.Password, dto.CurrentPassword, StringComparison.Ordinal))
+                return BadRequest(new { error = "Current password is incorrect." });
+
+            authenticatedUser.Password = dto.NewPassword;
+            await _db.SaveChangesAsync();
+
+            await _notificationProducer.PublishAsync(new NotificationMessage(
+                "UserPasswordChanged",
+                authenticatedUser.Email,
+                "Password changed",
+                "Your password was updated successfully.",
+                DateTime.UtcNow));
+
+            return NoContent();
         }
 
         // PATCH api/users/{id}
@@ -145,6 +180,47 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
                 links
             );
         }
+
+        private async Task<User?> AuthenticateAsync()
+        {
+            if (!Request.Headers.TryGetValue("Authorization", out var authHeader))
+                return null;
+
+            var header = authHeader.ToString();
+            if (!header.StartsWith("Basic ", StringComparison.OrdinalIgnoreCase))
+                return null;
+
+            var encoded = header["Basic ".Length..].Trim();
+            string decoded;
+
+            try
+            {
+                decoded = Encoding.UTF8.GetString(Convert.FromBase64String(encoded));
+            }
+            catch
+            {
+                return null;
+            }
+
+            var parts = decoded.Split(':', 2);
+            if (parts.Length != 2)
+                return null;
+
+            var email = parts[0];
+            var password = parts[1];
+
+            if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+                return null;
+
+            return await _db.Users.SingleOrDefaultAsync(u =>
+                u.Email == email && u.Password == password);
+        }
+
+        private ActionResult UnauthorizedResult()
+        {
+            Response.Headers["WWW-Authenticate"] = "Basic realm=\"users\"";
+            return Unauthorized(new { error = "Basic authentication required." });
+        }
     }
 
     // DTO types for Users
@@ -153,6 +229,8 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
 
     // Only fields allowed to change after registration
     public record UserUpdateDto(string? Name, string? StreetAddress);
+
+    public record UserPasswordUpdateDto(string CurrentPassword, string NewPassword);
 
     public record UserDto(
         int Id,

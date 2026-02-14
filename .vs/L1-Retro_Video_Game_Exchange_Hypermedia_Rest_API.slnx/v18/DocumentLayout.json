@@ -3,23 +3,47 @@
   "WorkspaceRootPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx nginx\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx nginx\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\NotificationWorker.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\inotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\inotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\tradeofferstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\tradeofferstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\data\\exchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -28,10 +52,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -60,6 +80,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\l1-retro_video_game_exchange_hypermedia_rest_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{F97C0245-6A02-FA3A-243C-B2AF849A6E4B}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\l1-retro_video_game_exchange_hypermedia_rest_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -69,7 +93,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 15,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,59 +133,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "nginx.conf",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx nginx\\nginx.conf",
-              "RelativeDocumentMoniker": "nginx nginx\\nginx.conf",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx nginx\\nginx.conf",
-              "RelativeToolTip": "nginx nginx\\nginx.conf",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "DocumentIndex": 20,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile",
+              "RelativeDocumentMoniker": "NotificationWorker\\Dockerfile",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile",
+              "RelativeToolTip": "NotificationWorker\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-30T22:49:57.351Z",
+              "WhenOpened": "2026-02-13T04:05:18.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationWorker\\Program.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeToolTip": "NotificationWorker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T04:05:11.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NotificationWorker.csproj",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
+              "RelativeDocumentMoniker": "NotificationWorker\\NotificationWorker.csproj",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
+              "RelativeToolTip": "NotificationWorker\\NotificationWorker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-13T04:04:58.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAPUUAAAAAAAAAAAowAQVAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-01-30T22:17:19.662Z",
+              "Title": "KafkaNotificationProducer.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T04:03:40.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
-              "RelativeDocumentMoniker": "nginx\\Dockerfile",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
-              "RelativeToolTip": "nginx\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-30T22:01:43.416Z",
+              "DocumentIndex": 4,
+              "Title": "INotificationProducer.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T04:03:16.927Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-30T22:01:36.661Z",
+              "DocumentIndex": 5,
+              "Title": "NotificationMessage.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T04:03:11.48Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
+              "Title": "TradeOffersController.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T22:00:49.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
@@ -169,25 +232,48 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-30T22:01:33.123Z",
+              "WhenOpened": "2026-01-30T22:01:33.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwFkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-30T22:01:36.661Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TradeOffersController.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "ViewState": "AgIAAOsAAAAAAAAAAAAgwPMAAAAcAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPUUAAAAAAAAAAAowAQVAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-01-30T22:17:19.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TradeOfferStatus.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:00:49.634Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T06:31:56.055Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "ExchangeDbContext.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
@@ -195,12 +281,11 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAgwCwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T22:17:24.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T22:17:24.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
@@ -208,24 +293,11 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T16:15:58.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-16T16:15:58.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAiwKMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T04:21:15.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
@@ -233,12 +305,36 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T16:15:50.586Z",
+              "WhenOpened": "2026-01-16T16:15:50.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
+              "RelativeDocumentMoniker": "nginx\\Dockerfile",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
+              "RelativeToolTip": "nginx\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-30T22:01:43.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAABBwPEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-17T04:21:15.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "LinkDto.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
@@ -250,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "GameController.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
@@ -258,25 +354,24 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
               "ViewState": "AgIAAP8AAAAAAAAAAAAUwJUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T04:24:23.806Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T04:24:23.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
               "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBYAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-16T16:11:41.517Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "20260117062646_InitialCreate.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
@@ -288,13 +383,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
               "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-01-17T04:11:07.683Z",
               "EditorCaption": ""

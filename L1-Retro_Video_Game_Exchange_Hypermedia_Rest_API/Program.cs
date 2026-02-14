@@ -1,4 +1,5 @@
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Data;
+using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,6 +15,8 @@ builder.Services.AddSwaggerGen();
 // 3) DbContext (SQLite example)
 builder.Services.AddDbContext<ExchangeDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddSingleton<INotificationProducer, KafkaNotificationProducer>();
 
 var app = builder.Build();
 

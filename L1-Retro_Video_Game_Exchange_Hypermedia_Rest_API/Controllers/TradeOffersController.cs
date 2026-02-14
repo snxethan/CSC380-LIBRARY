@@ -1,6 +1,7 @@
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Data;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.DTOs;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Models;
+using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -16,10 +17,12 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
     public class TradeOffersController : ControllerBase
     {
         private readonly ExchangeDbContext _db;
+        private readonly INotificationProducer _notificationProducer;
 
-        public TradeOffersController(ExchangeDbContext db)
+        public TradeOffersController(ExchangeDbContext db, INotificationProducer notificationProducer)
         {
             _db = db;
+            _notificationProducer = notificationProducer;
         }
 
         // POST api/tradeoffers  (create trade offer)
@@ -60,6 +63,12 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             _db.TradeOffers.Add(offer);
             await _db.SaveChangesAsync();
 
+            await NotifyTradeOfferAsync(
+                offer,
+                "TradeOfferCreated",
+                "New trade offer created",
+                $"Trade offer {offer.Id} was created for requested game {offer.RequestedGameId} and offered game {offer.OfferedGameId}.");
+
             return CreatedAtAction(nameof(GetTradeOfferById), new { id = offer.Id }, ToTradeOfferDto(offer));
         }
 
@@ -76,7 +85,7 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
                 return NotFound(new { error = "Trade offer not found." });
 
             if (offer.RequesterUserId != user.Id && offer.OwnerUserId != user.Id)
-                return Forbid();
+                return StatusCode(403, new { error = "Forbidden." });
 
             return Ok(ToTradeOfferDto(offer));
         }
@@ -124,7 +133,7 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
                 return NotFound(new { error = "Trade offer not found." });
 
             if (offer.OwnerUserId != user.Id)
-                return Forbid();
+                return StatusCode(403, new { error = "Forbidden." });
 
             if (offer.Status != TradeOfferStatus.Pending)
                 return Conflict(new { error = "Offer has already been responded to." });
@@ -163,6 +172,23 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             }
 
             await _db.SaveChangesAsync();
+
+            if (decision == TradeOfferStatus.Accepted)
+            {
+                await NotifyTradeOfferAsync(
+                    offer,
+                    "TradeOfferAccepted",
+                    "Trade offer accepted",
+                    $"Trade offer {offer.Id} was accepted.");
+            }
+            else
+            {
+                await NotifyTradeOfferAsync(
+                    offer,
+                    "TradeOfferRejected",
+                    "Trade offer rejected",
+                    $"Trade offer {offer.Id} was rejected.");
+            }
 
             return Ok(ToTradeOfferDto(offer));
         }
@@ -232,6 +258,34 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
                 offer.CreatedAtUtc,
                 links
             );
+        }
+
+        private async Task NotifyTradeOfferAsync(TradeOffer offer, string eventType, string subject, string body)
+        {
+            var requester = await _db.Users.FindAsync(offer.RequesterUserId);
+            var owner = await _db.Users.FindAsync(offer.OwnerUserId);
+
+            var occurredAt = DateTime.UtcNow;
+
+            if (requester != null)
+            {
+                await _notificationProducer.PublishAsync(new NotificationMessage(
+                    eventType,
+                    requester.Email,
+                    subject,
+                    body,
+                    occurredAt));
+            }
+
+            if (owner != null)
+            {
+                await _notificationProducer.PublishAsync(new NotificationMessage(
+                    eventType,
+                    owner.Email,
+                    subject,
+                    body,
+                    occurredAt));
+            }
         }
     }
 
