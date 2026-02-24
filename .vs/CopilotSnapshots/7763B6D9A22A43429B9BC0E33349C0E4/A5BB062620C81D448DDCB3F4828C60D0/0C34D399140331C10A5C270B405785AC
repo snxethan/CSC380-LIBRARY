@@ -1,4 +1,4 @@
-version: "3.9"
+﻿version: "3.9"
 
 services:
   api1:
@@ -80,14 +80,6 @@ services:
     environment:
       Kafka__BootstrapServers: kafka:9092
       Kafka__Topic: notifications
-    networks:
-      - exchange-net
-
-  prometheus:
-    build:
-      context: ./Prometheus
-    ports:
-      - "9090:9090"
     networks:
       - exchange-net
 
