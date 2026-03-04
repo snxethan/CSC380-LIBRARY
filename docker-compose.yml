@@ -1,0 +1,177 @@
+# =============================================================================
+# docker-compose.yml — Retro Video Game Exchange (L3)
+# =============================================================================
+#
+# Services defined here:
+#
+#   ┌─────────────────────────────────────────────────────────────────────┐
+#   │  nginx (port 8080)  ← load-balancer / reverse proxy                │
+#   │       │                                                             │
+#   │  ┌────┴────┐   ┌────────┐   round-robin between api1 and api2      │
+#   │  │  api1   │   │  api2  │   (both share the same SQLite volume)     │
+#   │  └────┬────┘   └───┬────┘                                          │
+#   │       │            │  publish to Kafka                              │
+#   │       └────────────┴──────────────┐                                │
+#   │                                   ▼                                │
+#   │  zookeeper ←── kafka (port 9092) ──► notification-worker           │
+#   │                topic: notifications   (consumes & logs emails)     │
+#   └─────────────────────────────────────────────────────────────────────┘
+#
+# Kafka topic: "notifications"
+# Message format (JSON):
+#   { "EventType": "...", "ToEmail": "...", "Subject": "...",
+#     "Body": "...", "OccurredAtUtc": "..." }
+#
+# =============================================================================
+
+version: "3.9"
+
+services:
+
+  # ---------------------------------------------------------------------------
+  # api1 — First instance of the REST API
+  # ---------------------------------------------------------------------------
+  # Builds from L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API/Dockerfile.
+  # On startup it:
+  #   1. Connects to the shared SQLite database at /data/exchange.db.
+  #   2. Runs EF Core migrations (db.Database.Migrate() in Program.cs).
+  #   3. Registers KafkaNotificationProducer as a singleton, connecting to
+  #      kafka:9092 using the Kafka__BootstrapServers env var.
+  # ---------------------------------------------------------------------------
+  api1:
+    build:
+      context: .
+      dockerfile: L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
+      DisableHttpsRedirection: "true"
+      INSTANCE_NAME: api1                  # returned in X-Instance-Name header
+      Kafka__BootstrapServers: kafka:9092  # Kafka broker address (Docker service name)
+      Kafka__Topic: notifications          # topic KafkaNotificationProducer publishes to
+    volumes:
+      - exchange-data:/data               # shared SQLite file between api1 and api2
+    networks:
+      - exchange-net
+    ports:
+      - "8081:8080"                        # direct access for debugging
+
+  # ---------------------------------------------------------------------------
+  # api2 — Second instance of the REST API (identical config, different name)
+  # ---------------------------------------------------------------------------
+  # nginx load-balances between api1 and api2 in round-robin fashion.
+  # The X-Instance-Name response header identifies which instance handled
+  # each request.
+  # ---------------------------------------------------------------------------
+  api2:
+    build:
+      context: .
+      dockerfile: L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API/Dockerfile
+    environment:
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__DefaultConnection: Data Source=/data/exchange.db
+      DisableHttpsRedirection: "true"
+      INSTANCE_NAME: api2
+      Kafka__BootstrapServers: kafka:9092
+      Kafka__Topic: notifications
+    volumes:
+      - exchange-data:/data
+    networks:
+      - exchange-net
+    ports:
+      - "8082:8080"
+
+  # ---------------------------------------------------------------------------
+  # nginx — Reverse proxy / load balancer
+  # ---------------------------------------------------------------------------
+  # Listens on port 8080 and distributes requests to api1:8080 and api2:8080.
+  # Config is in nginx/nginx.conf; the upstream block lists both API services.
+  # ---------------------------------------------------------------------------
+  nginx:
+    build:
+      context: ./nginx
+    depends_on:
+      - api1
+      - api2
+    ports:
+      - "8080:8080"                        # public entry point for the API
+    networks:
+      - exchange-net
+
+  # ---------------------------------------------------------------------------
+  # zookeeper — Kafka coordination service
+  # ---------------------------------------------------------------------------
+  # Required by Confluent Kafka 7.x.  Manages broker metadata, leader election,
+  # and cluster configuration.  Clients (API + worker) never connect to
+  # Zookeeper directly — only the Kafka broker does.
+  # ---------------------------------------------------------------------------
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.6.1
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181          # port Kafka broker connects to
+      ZOOKEEPER_TICK_TIME: 2000            # heartbeat interval in milliseconds
+    networks:
+      - exchange-net
+
+  # ---------------------------------------------------------------------------
+  # kafka — Message broker
+  # ---------------------------------------------------------------------------
+  # Stores the "notifications" topic.  The API containers are producers; the
+  # notification-worker container is the consumer.
+  #
+  # Key environment variables:
+  #   KAFKA_BROKER_ID                     — unique ID for this broker
+  #   KAFKA_ZOOKEEPER_CONNECT             — Zookeeper address
+  #   KAFKA_LISTENERS                     — address the broker binds to
+  #   KAFKA_ADVERTISED_LISTENERS          — address clients use to connect
+  #   KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR — set to 1 for single-node dev
+  # ---------------------------------------------------------------------------
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    depends_on:
+      - zookeeper
+    ports:
+      - "9092:9092"                        # exposed for local testing / debugging
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092   # "kafka" resolves via Docker DNS
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1            # 1 = single-broker development setup
+    networks:
+      - exchange-net
+
+  # ---------------------------------------------------------------------------
+  # notification-worker — Kafka consumer / email service
+  # ---------------------------------------------------------------------------
+  # A separate .NET console application (NotificationWorker/Program.cs) that:
+  #   1. Subscribes to the "notifications" Kafka topic.
+  #   2. Deserialises each NotificationMessage from JSON.
+  #   3. Logs the email details (ToEmail, Subject, Body) to stdout.
+  #      In production this would call an SMTP client to send a real email.
+  #
+  # Running as its own container means email processing never blocks the API.
+  # The consumer group ID defaults to "notification-worker", so Kafka tracks
+  # offsets and the worker resumes where it left off after a restart.
+  # ---------------------------------------------------------------------------
+  notification-worker:
+    build:
+      context: .
+      dockerfile: NotificationWorker/Dockerfile
+    depends_on:
+      - kafka
+    environment:
+      Kafka__BootstrapServers: kafka:9092  # same broker as the API
+      Kafka__Topic: notifications          # topic to consume from
+    networks:
+      - exchange-net
+
+# =============================================================================
+# Volumes & Networks
+# =============================================================================
+
+volumes:
+  exchange-data:   # persists the SQLite database file across container restarts
+
+networks:
+  exchange-net:    # private bridge network; services communicate by service name

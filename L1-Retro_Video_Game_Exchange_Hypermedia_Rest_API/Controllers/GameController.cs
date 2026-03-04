@@ -164,6 +164,22 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             return Ok(dtos);
         }
 
+        // GET api/games/others/{userId}  (games not owned by user)
+        // Used by the trade-offer UI to show games the user can request.
+        [HttpGet("others/{userId:int}")]
+        public async Task<ActionResult<IEnumerable<GameDto>>> GetGamesNotOwnedByUser(int userId)
+        {
+            var userExists = await _db.Users.AnyAsync(u => u.Id == userId);
+            if (!userExists)
+                return NotFound(new { error = "User not found." });
+
+            var games = await _db.Games
+                .Where(g => g.OwnerId != userId)
+                .ToListAsync();
+
+            return Ok(games.Select(ToGameDto));
+        }
+
         // GET api/users/{userId}/games  (games owned by a specific user)
         [HttpGet("/api/users/{userId:int}/games")]
         public async Task<ActionResult<IEnumerable<GameDto>>> GetGamesForUser(int userId)

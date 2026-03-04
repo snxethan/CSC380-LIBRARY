@@ -16,5 +16,11 @@
 
         // Navigation
         public User Owner { get; set; } = default!;
+
+        // Navigation: trade offers where this game is being requested
+        public ICollection<TradeOffer> RequestedInOffers { get; set; } = new List<TradeOffer>();
+
+        // Navigation: trade offers where this game is being offered
+        public ICollection<TradeOffer> OfferedInOffers { get; set; } = new List<TradeOffer>();
     }
 }
