@@ -1,0 +1,15 @@
+## Build output
+bin/
+obj/
+
+## .NET user files
+*.user
+*.suo
+.vs/
+
+## SQLite databases (don't commit local DB state)
+*.db
+
+## OS files
+.DS_Store
+Thumbs.db
