@@ -1,0 +1,25 @@
+{
+  "id": null,
+  "uid": "api-usage",
+  "title": "API Usage",
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "Requests per second",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "sum(rate(http_requests_received_total[1m]))",
+          "legendFormat": "rps"
+        }
+      ],
+      "gridPos": { "h": 9, "w": 24, "x": 0, "y": 0 }
+    }
+  ],
+  "time": { "from": "now-15m", "to": "now" }
+}

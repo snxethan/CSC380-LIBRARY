@@ -73,6 +73,14 @@
               "target": "Package",
               "version": "[10.0.2, )"
             },
+            "Prometheus-net": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
+            "Prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[8.2.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[10.1.0, )"

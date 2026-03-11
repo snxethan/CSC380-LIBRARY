@@ -699,6 +699,38 @@
           }
         }
       },
+      "prometheus-net/8.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/Prometheus.NetStandard.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/Prometheus.NetStandard.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "prometheus-net.AspNetCore/8.2.0": {
+        "type": "package",
+        "dependencies": {
+          "prometheus-net": "8.2.0"
+        },
+        "compile": {
+          "lib/net6.0/Prometheus.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Prometheus.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
         "type": "package",
         "dependencies": {
@@ -2736,6 +2768,42 @@
         "packageIcon.png"
       ]
     },
+    "prometheus-net/8.2.0": {
+      "sha512": "pLsOu9HbJKJWeyg6IAb57K/JeJa+Ti1uD47c2+SANjga6UuDyeZN/if+9Q2H+s96x8/8DDT8AJ/9UU4+GsK/NA==",
+      "type": "package",
+      "path": "prometheus-net/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net462/Prometheus.NetStandard.dll",
+        "lib/net462/Prometheus.NetStandard.xml",
+        "lib/net6.0/Prometheus.NetStandard.dll",
+        "lib/net6.0/Prometheus.NetStandard.xml",
+        "lib/net7.0/Prometheus.NetStandard.dll",
+        "lib/net7.0/Prometheus.NetStandard.xml",
+        "lib/netstandard2.0/Prometheus.NetStandard.dll",
+        "lib/netstandard2.0/Prometheus.NetStandard.xml",
+        "prometheus-net-logo.png",
+        "prometheus-net.8.2.0.nupkg.sha512",
+        "prometheus-net.nuspec"
+      ]
+    },
+    "prometheus-net.AspNetCore/8.2.0": {
+      "sha512": "aAedAb+/SPMzxHzpd+PL7grERwTSckih+weH30tFH/L9+NvF8mhDqp74k9hMSu1sS/BKbKoa+bUpM/BAA6FU7w==",
+      "type": "package",
+      "path": "prometheus-net.aspnetcore/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Prometheus.AspNetCore.dll",
+        "lib/net6.0/Prometheus.AspNetCore.xml",
+        "prometheus-net-logo.png",
+        "prometheus-net.aspnetcore.8.2.0.nupkg.sha512",
+        "prometheus-net.aspnetcore.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.11": {
       "sha512": "DC4nA7yWnf4UZdgJDF+9Mus4/cb0Y3Sfgi3gDnAoKNAIBwzkskNAbNbyu+u4atT0ruVlZNJfwZmwiEwE5oz9LQ==",
       "type": "package",
@@ -3101,6 +3169,8 @@
       "Microsoft.EntityFrameworkCore >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.2",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.2",
+      "Prometheus-net >= 8.2.0",
+      "Prometheus-net.AspNetCore >= 8.2.0",
       "Swashbuckle.AspNetCore >= 10.1.0",
       "Swashbuckle.AspNetCore.Swagger >= 10.1.0"
     ]
@@ -3177,6 +3247,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[10.0.2, )"
+          },
+          "Prometheus-net": {
+            "target": "Package",
+            "version": "[8.2.0, )"
+          },
+          "Prometheus-net.AspNetCore": {
+            "target": "Package",
+            "version": "[8.2.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

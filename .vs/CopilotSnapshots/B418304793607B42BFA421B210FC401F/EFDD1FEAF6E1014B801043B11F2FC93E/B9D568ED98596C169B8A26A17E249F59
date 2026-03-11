@@ -1,0 +1,25 @@
+﻿events {}
+
+http {
+    upstream api_upstream {
+        server api1:8080;
+        server api2:8080;
+    }
+
+    log_format upstream_log '$remote_addr - $request '
+                            'upstream=$upstream_addr status=$status';
+
+    access_log /var/log/nginx/access.log upstream_log;
+
+    server {
+        listen 8080;
+
+        location / {
+            proxy_pass http://api_upstream;
+            proxy_set_header Host $host;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            add_header X-Upstream-Addr $upstream_addr always;
+        }
+    }
+}

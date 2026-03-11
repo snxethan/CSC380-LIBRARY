@@ -1,9 +1,21 @@
 using Confluent.Kafka;
+using Prometheus;
 using System.Text.Json;
 
 var bootstrapServers = Environment.GetEnvironmentVariable("Kafka__BootstrapServers") ?? "kafka:9092";
 var topic = Environment.GetEnvironmentVariable("Kafka__Topic") ?? "notifications";
 var groupId = Environment.GetEnvironmentVariable("Kafka__GroupId") ?? "notification-worker";
+
+var messagesConsumed = Metrics.CreateCounter(
+    "notification_worker_messages_consumed_total",
+    "Total number of messages consumed by the notification worker.");
+
+var consumeErrors = Metrics.CreateCounter(
+    "notification_worker_consume_errors_total",
+    "Total number of Kafka consume errors encountered by the notification worker.");
+
+using var metricServer = new KestrelMetricServer(port: 8080);
+metricServer.Start();
 
 var config = new ConsumerConfig
 {
@@ -42,9 +54,12 @@ try
             Console.WriteLine($"Sending email to {message.ToEmail}");
             Console.WriteLine($"Subject: {message.Subject}");
             Console.WriteLine($"Body: {message.Body}");
+
+            messagesConsumed.Inc();
         }
         catch (ConsumeException ex)
         {
+            consumeErrors.Inc();
             Console.WriteLine($"Kafka consume error: {ex.Error.Reason}");
         }
     }
@@ -55,6 +70,7 @@ catch (OperationCanceledException)
 finally
 {
     consumer.Close();
+    metricServer.Stop();
 }
 
 public record NotificationMessage(

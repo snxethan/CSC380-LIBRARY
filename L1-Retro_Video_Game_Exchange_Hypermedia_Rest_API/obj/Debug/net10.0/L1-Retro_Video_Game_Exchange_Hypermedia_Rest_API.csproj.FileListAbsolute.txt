@@ -328,3 +328,5 @@ C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hyperme
 C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\bin\Debug\net10.0\runtimes\win-x86\native\zlib1.dll
 C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\bin\Debug\net10.0\runtimes\win-x86\native\zstd.dll
 C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\bin\Debug\net10.0\Prometheus.NetStandard.dll
+C:\projects\NEU\Y3\Q2\CSC380\CSC380-LIBRARY\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\bin\Debug\net10.0\Prometheus.AspNetCore.dll

@@ -83,6 +83,24 @@ services:
     networks:
       - exchange-net
 
+  kafka-exporter:
+    image: danielqsj/kafka-exporter:v1.7.0
+    command:
+      - --kafka.server=kafka:9092
+    depends_on:
+      - kafka
+    networks:
+      - exchange-net
+
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:1.1.0
+    command:
+      - --nginx.scrape-uri=http://nginx:8080/stub_status
+    depends_on:
+      - nginx
+    networks:
+      - exchange-net
+
   prometheus:
     build:
       context: ./Prometheus
@@ -91,8 +109,25 @@ services:
     networks:
       - exchange-net
 
+  grafana:
+    image: grafana/grafana-oss:10.4.3
+    depends_on:
+      - prometheus
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: admin
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning
+      - ./grafana/dashboards:/var/lib/grafana/dashboards
+    networks:
+      - exchange-net
+
 volumes:
   exchange-data:
+  grafana-data:
 
 networks:
   exchange-net:

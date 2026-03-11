@@ -6,3 +6,30 @@ scrape_configs:
   - job_name: "prometheus"
     static_configs:
       - targets: ["prometheus:9090"]
+
+  - job_name: "api"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api1:8080", "api2:8080"]
+
+  - job_name: "database"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["api1:8080", "api2:8080"]
+    metric_relabel_configs:
+      - source_labels: [__name__]
+        regex: database_up
+        action: keep
+
+  - job_name: "notification-worker"
+    metrics_path: /metrics
+    static_configs:
+      - targets: ["notification-worker:8080"]
+
+  - job_name: "kafka"
+    static_configs:
+      - targets: ["kafka-exporter:9308"]
+
+  - job_name: "nginx"
+    static_configs:
+      - targets: ["nginx-exporter:9113"]

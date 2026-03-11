@@ -1,7 +1,9 @@
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Data;
+using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Monitoring;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +19,7 @@ builder.Services.AddDbContext<ExchangeDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSingleton<INotificationProducer, KafkaNotificationProducer>();
+builder.Services.AddHostedService<DatabaseMetricsService>();
 
 var app = builder.Build();
 
@@ -40,6 +43,8 @@ app.Use(async (context, next) =>
     await next();
 });
 
+app.UseHttpMetrics();
+
 app.UseAuthorization();
 
 // Ensure DB is created/migrated
@@ -50,6 +55,7 @@ using (var scope = app.Services.CreateScope())
 }
 
 // 5) Map controllers
+app.MapMetrics();
 app.MapControllers();
 
 app.Run();

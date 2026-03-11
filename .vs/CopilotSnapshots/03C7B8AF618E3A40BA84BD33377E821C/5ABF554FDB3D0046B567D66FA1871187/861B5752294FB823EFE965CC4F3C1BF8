@@ -1,0 +1,110 @@
+﻿using Confluent.Kafka;
+using Microsoft.Extensions.Logging;
+using Prometheus;
+using System.Text.Json;
+
+var bootstrapServers = Environment.GetEnvironmentVariable("Kafka__BootstrapServers") ?? "kafka:9092";
+var topic = Environment.GetEnvironmentVariable("Kafka__Topic") ?? "notifications";
+var groupId = Environment.GetEnvironmentVariable("Kafka__GroupId") ?? "notification-worker";
+
+var messagesConsumed = Metrics.CreateCounter(
+    "notification_worker_messages_consumed_total",
+    "Total number of messages consumed by the notification worker.");
+
+var consumeErrors = Metrics.CreateCounter(
+    "notification_worker_consume_errors_total",
+    "Total number of Kafka consume errors encountered by the notification worker.");
+
+using var metricServer = new KestrelMetricServer(port: 8080);
+metricServer.Start();
+
+using var loggerFactory = LoggerFactory.Create(builder =>
+    builder
+        .SetMinimumLevel(LogLevel.Information)
+        .AddSimpleConsole(options =>
+        {
+            options.SingleLine = true;
+            options.TimestampFormat = "yyyy-MM-ddTHH:mm:ss.fffZ ";
+        }));
+
+var logger = loggerFactory.CreateLogger("NotificationWorker");
+
+var config = new ConsumerConfig
+{
+    BootstrapServers = bootstrapServers,
+    GroupId = groupId,
+    AutoOffsetReset = AutoOffsetReset.Earliest,
+    EnableAutoCommit = true
+};
+
+using var consumer = new ConsumerBuilder<Ignore, string>(config).Build();
+consumer.Subscribe(topic);
+
+using var cts = new CancellationTokenSource();
+Console.CancelKeyPress += (_, e) =>
+{
+    e.Cancel = true;
+    cts.Cancel();
+};
+
+logger.LogInformation("Listening for notifications on {Topic}", topic);
+
+try
+{
+    while (!cts.IsCancellationRequested)
+    {
+        try
+        {
+            var result = consumer.Consume(cts.Token);
+            if (result?.Message?.Value == null)
+                continue;
+
+            var message = JsonSerializer.Deserialize<NotificationMessage>(result.Message.Value);
+            if (message == null)
+                continue;
+
+            using (logger.BeginScope(new Dictionary<string, object>
+            {
+                ["correlationId"] = message.CorrelationId ?? "unknown",
+                ["eventType"] = message.EventType,
+                ["userId"] = message.UserId,
+                ["offerId"] = message.OfferId
+            }))
+            {
+                logger.LogInformation(
+                    "Sending notification to {ToEmail} eventType {EventType} userId {UserId} offerId {OfferId}",
+                    message.ToEmail,
+                    message.EventType,
+                    message.UserId,
+                    message.OfferId);
+                logger.LogInformation("Subject: {Subject}", message.Subject);
+                logger.LogInformation("Body: {Body}", message.Body);
+            }
+
+            messagesConsumed.Inc();
+        }
+        catch (ConsumeException ex)
+        {
+            consumeErrors.Inc();
+            logger.LogWarning(ex, "Kafka consume error: {Reason}", ex.Error.Reason);
+        }
+    }
+}
+catch (OperationCanceledException)
+{
+}
+finally
+{
+    consumer.Close();
+    metricServer.Stop();
+}
+
+public record NotificationMessage(
+    string EventType,
+    string ToEmail,
+    string Subject,
+    string Body,
+    DateTime OccurredAtUtc,
+    string? CorrelationId,
+    int? UserId,
+    int? OfferId);

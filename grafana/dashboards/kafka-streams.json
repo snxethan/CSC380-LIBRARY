@@ -1,0 +1,38 @@
+{
+  "id": null,
+  "uid": "kafka-streams",
+  "title": "Kafka Streams",
+  "timezone": "browser",
+  "schemaVersion": 38,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "Consumer group lag",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "kafka_consumergroup_lag{consumergroup=\"notification-worker\"}",
+          "legendFormat": "{{consumergroup}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 0 }
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "Messages consumed per second",
+      "datasource": "Prometheus",
+      "targets": [
+        {
+          "expr": "rate(notification_worker_messages_consumed_total[1m])",
+          "legendFormat": "consumed/s"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 8 }
+    }
+  ],
+  "time": { "from": "now-15m", "to": "now" }
+}
