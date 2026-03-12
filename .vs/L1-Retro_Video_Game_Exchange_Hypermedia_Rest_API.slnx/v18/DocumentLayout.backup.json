@@ -7,135 +7,20 @@
       "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\inotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\inotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\prometheus.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prometheus\\prometheus.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\dashboards\\dashboards.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\provisioning\\dashboards\\dashboards.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\prometheus-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\provisioning\\datasources\\prometheus-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\l1-retro_video_game_exchange_hypermedia_rest_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\l1-retro_video_game_exchange_hypermedia_rest_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\nginx-traffic.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\dashboards\\nginx-traffic.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\kafka-streams.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\dashboards\\kafka-streams.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\api-usage.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\dashboards\\api-usage.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\NotificationWorker.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\monitoring\\databasemetricsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\monitoring\\databasemetricsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Prometheus\\Dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\tradeofferstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\tradeofferstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\data\\exchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\data\\exchangedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\dtos\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\dtos\\linkdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\migrations\\20260117062646_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\migrations\\20260117062646_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:nginx\\nginx.conf||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\logging\\correlationid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\logging\\correlationid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:loki\\loki-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:promtail\\promtail-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\provisioning\\datasources\\loki-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\system-logs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\dashboards\\system-logs.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,8 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 13,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
+              "RelativeDocumentMoniker": "docker-compose.yml",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
+              "RelativeToolTip": "docker-compose.yml",
+              "ViewState": "AgIAAA0AAAAAAAAAAIBJwIcAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-01-30T22:01:36.661Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TradeOffersController.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T22:00:49.634Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -185,93 +98,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "system-logs.json",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\system-logs.json",
-              "RelativeDocumentMoniker": "grafana\\dashboards\\system-logs.json",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\system-logs.json",
-              "RelativeToolTip": "grafana\\dashboards\\system-logs.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-03-11T08:24:06.247Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "loki-datasource.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml",
-              "RelativeDocumentMoniker": "grafana\\provisioning\\datasources\\loki-datasource.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml",
-              "RelativeToolTip": "grafana\\provisioning\\datasources\\loki-datasource.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-11T08:23:56.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "promtail-config.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml",
-              "RelativeDocumentMoniker": "promtail\\promtail-config.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml",
-              "RelativeToolTip": "promtail\\promtail-config.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-11T08:23:54.131Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "loki-config.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml",
-              "RelativeDocumentMoniker": "loki\\loki-config.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml",
-              "RelativeToolTip": "loki\\loki-config.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-03-11T08:23:48.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CorrelationId.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Logging\\CorrelationId.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Logging\\CorrelationId.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Logging\\CorrelationId.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Logging\\CorrelationId.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-11T08:22:02.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
-              "RelativeDocumentMoniker": "NotificationWorker\\Program.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
-              "RelativeToolTip": "NotificationWorker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T04:05:11.214Z",
+              "WhenOpened": "2026-03-12T00:29:25.989Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "INotificationProducer.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\INotificationProducer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationWorker\\Program.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeToolTip": "NotificationWorker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T04:03:16.927Z",
+              "WhenOpened": "2026-02-13T04:05:11.214Z",
               "EditorCaption": ""
             },
             {
@@ -280,332 +128,12 @@
               "Title": "KafkaNotificationProducer.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs*",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T04:03:40.314Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "prometheus.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\prometheus.yml",
-              "RelativeDocumentMoniker": "Prometheus\\prometheus.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\prometheus.yml",
-              "RelativeToolTip": "Prometheus\\prometheus.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-23T21:24:56.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TradeOffersController.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:00:49.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T04:21:15.341Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAlwB8AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-01-30T22:01:36.661Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-30T22:01:33.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "dashboards.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\dashboards\\dashboards.yml",
-              "RelativeDocumentMoniker": "grafana\\provisioning\\dashboards\\dashboards.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\dashboards\\dashboards.yml",
-              "RelativeToolTip": "grafana\\provisioning\\dashboards\\dashboards.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-27T17:32:13.065Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "nginx.conf",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\nginx.conf",
-              "RelativeDocumentMoniker": "nginx\\nginx.conf",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\nginx.conf",
-              "RelativeToolTip": "nginx\\nginx.conf",
-              "ViewState": "AgIAABQAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-03-06T08:12:29.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NotificationMessage.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T04:03:11.48Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "kafka-streams.json",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\kafka-streams.json",
-              "RelativeDocumentMoniker": "grafana\\dashboards\\kafka-streams.json",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\kafka-streams.json",
-              "RelativeToolTip": "grafana\\dashboards\\kafka-streams.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-27T17:32:20.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAABBwEgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T16:11:41.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "nginx-traffic.json",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\nginx-traffic.json",
-              "RelativeDocumentMoniker": "grafana\\dashboards\\nginx-traffic.json",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\nginx-traffic.json",
-              "RelativeToolTip": "grafana\\dashboards\\nginx-traffic.json",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-27T17:32:24.298Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "prometheus-datasource.yml",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\prometheus-datasource.yml",
-              "RelativeDocumentMoniker": "grafana\\provisioning\\datasources\\prometheus-datasource.yml",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\prometheus-datasource.yml",
-              "RelativeToolTip": "grafana\\provisioning\\datasources\\prometheus-datasource.yml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-02-27T17:41:03.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "api-usage.json",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\api-usage.json",
-              "RelativeDocumentMoniker": "grafana\\dashboards\\api-usage.json",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\dashboards\\api-usage.json",
-              "RelativeToolTip": "grafana\\dashboards\\api-usage.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-27T17:32:16.385Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "DatabaseMetricsService.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Monitoring\\DatabaseMetricsService.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Monitoring\\DatabaseMetricsService.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Monitoring\\DatabaseMetricsService.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Monitoring\\DatabaseMetricsService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-27T17:31:45.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAtwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-17T04:11:07.683Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "NotificationWorker.csproj",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
-              "RelativeDocumentMoniker": "NotificationWorker\\NotificationWorker.csproj",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
-              "RelativeToolTip": "NotificationWorker\\NotificationWorker.csproj",
-              "ViewState": "AgIAAAoAAAAAAAAAAABBwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-13T04:04:58.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\Dockerfile",
-              "RelativeDocumentMoniker": "Prometheus\\Dockerfile",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\Prometheus\\Dockerfile",
-              "RelativeToolTip": "Prometheus\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-23T21:24:59.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile",
-              "RelativeDocumentMoniker": "NotificationWorker\\Dockerfile",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Dockerfile",
-              "RelativeToolTip": "NotificationWorker\\Dockerfile",
-              "ViewState": "AgIAAAYAAAAAAAAAAABBwAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-13T04:05:18.41Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Microsoft.Common.CurrentVersion.targets",
-              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\18\\Enterprise\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
-              "ViewState": "AgIAAPUUAAAAAAAAAAAowAQVAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2026-01-30T22:17:19.662Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "TradeOfferStatus.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\TradeOfferStatus.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T06:31:56.055Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ExchangeDbContext.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Data\\ExchangeDbContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA3wCwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T22:17:24.538Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\Game.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T16:15:58.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-16T16:15:50.586Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
-              "RelativeDocumentMoniker": "nginx\\Dockerfile",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\nginx\\Dockerfile",
-              "RelativeToolTip": "nginx\\Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-30T22:01:43.416Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "LinkDto.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\DTOs\\LinkDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T04:22:33.092Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "20260117062646_InitialCreate.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
-              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Migrations\\20260117062646_InitialCreate.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwBoAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T06:26:47.151Z"
             }
           ]
         }

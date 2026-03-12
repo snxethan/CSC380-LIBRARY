@@ -18,7 +18,7 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications
         {
             _logger = logger;
             var bootstrapServers = configuration["Kafka:BootstrapServers"] ?? "kafka:9092";
-            _topic = configuration["Kafka:Topic"] ?? "notifications";
+            _topic = configuration["Kafka:Topic"] ?? "notifications"; //TODO: multiple topics per subject users/games/offers/ sshpt for email 
 
             var config = new ProducerConfig
             {

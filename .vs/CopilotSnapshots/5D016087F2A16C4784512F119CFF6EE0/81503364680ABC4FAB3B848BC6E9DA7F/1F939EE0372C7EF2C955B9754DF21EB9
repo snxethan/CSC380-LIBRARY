@@ -1,4 +1,4 @@
-version: "3.9"
+﻿version: "3.9"
 
 services:
   api1:
@@ -11,8 +11,8 @@ services:
       DisableHttpsRedirection: "true"
       INSTANCE_NAME: api1
       Kafka__BootstrapServers: kafka:9092
-      Kafka__UserTopic: users
-      Kafka__OfferTopic: offers
+      Kafka__UserTopic: user-notifications
+      Kafka__OfferTopic: offer-notifications
     volumes:
       - exchange-data:/data
     networks:
@@ -30,8 +30,8 @@ services:
       DisableHttpsRedirection: "true"
       INSTANCE_NAME: api2
       Kafka__BootstrapServers: kafka:9092
-      Kafka__UserTopic: users
-      Kafka__OfferTopic: offers
+      Kafka__UserTopic: user-notifications
+      Kafka__OfferTopic: offer-notifications
     volumes:
       - exchange-data:/data
     networks:
@@ -81,14 +81,8 @@ services:
       - kafka
     environment:
       Kafka__BootstrapServers: kafka:9092
-      Kafka__UserTopic: users
-      Kafka__OfferTopic: offers
-      SMTP__Host: smtp.ethereal.email
-      SMTP__Port: 587
-      SMTP__User: ian35@ethereal.email
-      SMTP__Pass: TYg9BMsh6yafnEUgNE
-      SMTP__From: ian35@ethereal.email
-      SMTP__EnableSsl: "true"
+      Kafka__UserTopic: user-notifications
+      Kafka__OfferTopic: offer-notifications
     networks:
       - exchange-net
 

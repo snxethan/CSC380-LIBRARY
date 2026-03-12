@@ -1,4 +1,4 @@
-using Confluent.Kafka;
+﻿using Confluent.Kafka;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System;
@@ -20,8 +20,8 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications
         {
             _logger = logger;
             var bootstrapServers = configuration["Kafka:BootstrapServers"] ?? "kafka:9092";
-            _userTopic = configuration["Kafka:UserTopic"] ?? "users";
-            _offerTopic = configuration["Kafka:OfferTopic"] ?? "offers";
+            _userTopic = configuration["Kafka:UserTopic"] ?? "user-notifications";
+            _offerTopic = configuration["Kafka:OfferTopic"] ?? "offer-notifications";
             _fallbackTopic = configuration["Kafka:Topic"] ?? "notifications";
 
             var config = new ProducerConfig

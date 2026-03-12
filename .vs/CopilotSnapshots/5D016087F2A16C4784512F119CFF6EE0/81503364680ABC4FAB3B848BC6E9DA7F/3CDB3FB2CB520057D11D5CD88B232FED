@@ -1,10 +1,10 @@
 ﻿using Confluent.Kafka;
-using Microsoft.Extensions.Logging;
 using Prometheus;
 using System.Text.Json;
 
 var bootstrapServers = Environment.GetEnvironmentVariable("Kafka__BootstrapServers") ?? "kafka:9092";
-var topic = Environment.GetEnvironmentVariable("Kafka__Topic") ?? "notifications";
+var userTopic = Environment.GetEnvironmentVariable("Kafka__UserTopic") ?? "user-notifications";
+var offerTopic = Environment.GetEnvironmentVariable("Kafka__OfferTopic") ?? "offer-notifications";
 var groupId = Environment.GetEnvironmentVariable("Kafka__GroupId") ?? "notification-worker";
 
 var messagesConsumed = Metrics.CreateCounter(
@@ -18,17 +18,6 @@ var consumeErrors = Metrics.CreateCounter(
 using var metricServer = new KestrelMetricServer(port: 8080);
 metricServer.Start();
 
-using var loggerFactory = LoggerFactory.Create(builder =>
-    builder
-        .SetMinimumLevel(LogLevel.Information)
-        .AddSimpleConsole(options =>
-        {
-            options.SingleLine = true;
-            options.TimestampFormat = "yyyy-MM-ddTHH:mm:ss.fffZ ";
-        }));
-
-var logger = loggerFactory.CreateLogger("NotificationWorker");
-
 var config = new ConsumerConfig
 {
     BootstrapServers = bootstrapServers,
@@ -38,7 +27,8 @@ var config = new ConsumerConfig
 };
 
 using var consumer = new ConsumerBuilder<Ignore, string>(config).Build();
-consumer.Subscribe(topic);
+var topics = new[] { userTopic, offerTopic };
+consumer.Subscribe(topics);
 
 using var cts = new CancellationTokenSource();
 Console.CancelKeyPress += (_, e) =>
@@ -47,7 +37,7 @@ Console.CancelKeyPress += (_, e) =>
     cts.Cancel();
 };
 
-logger.LogInformation("Listening for notifications on {Topic}", topic);
+Console.WriteLine($"Listening for notifications on '{string.Join("', '", topics)}'...");
 
 try
 {
@@ -63,30 +53,16 @@ try
             if (message == null)
                 continue;
 
-            using (logger.BeginScope(new Dictionary<string, object>
-            {
-                ["correlationId"] = message.CorrelationId ?? "unknown",
-                ["eventType"] = message.EventType,
-                ["userId"] = message.UserId,
-                ["offerId"] = message.OfferId
-            }))
-            {
-                logger.LogInformation(
-                    "Sending notification to {ToEmail} eventType {EventType} userId {UserId} offerId {OfferId}",
-                    message.ToEmail,
-                    message.EventType,
-                    message.UserId,
-                    message.OfferId);
-                logger.LogInformation("Subject: {Subject}", message.Subject);
-                logger.LogInformation("Body: {Body}", message.Body);
-            }
+            Console.WriteLine($"Sending email to {message.ToEmail}");
+            Console.WriteLine($"Subject: {message.Subject}");
+            Console.WriteLine($"Body: {message.Body}");
 
             messagesConsumed.Inc();
         }
         catch (ConsumeException ex)
         {
             consumeErrors.Inc();
-            logger.LogWarning(ex, "Kafka consume error: {Reason}", ex.Error.Reason);
+            Console.WriteLine($"Kafka consume error: {ex.Error.Reason}");
         }
     }
 }
@@ -104,7 +80,4 @@ public record NotificationMessage(
     string ToEmail,
     string Subject,
     string Body,
-    DateTime OccurredAtUtc,
-    string? CorrelationId,
-    int? UserId,
-    int? OfferId);
+    DateTime OccurredAtUtc);
