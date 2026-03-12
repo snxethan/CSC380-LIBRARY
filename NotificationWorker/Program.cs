@@ -1,4 +1,5 @@
 using Confluent.Kafka;
+using Microsoft.Extensions.Logging;
 using Prometheus;
 using System.Net;
 using System.Net.Mail;
@@ -31,6 +32,17 @@ var emailSendErrors = Metrics.CreateCounter(
     "notification_worker_email_send_errors_total",
     "Total number of email send errors encountered by the notification worker.");
 
+using var loggerFactory = LoggerFactory.Create(builder =>
+{
+    builder.AddSimpleConsole(options =>
+    {
+        options.TimestampFormat = "yyyy-MM-ddTHH:mm:ss.fffZ ";
+    });
+    builder.SetMinimumLevel(LogLevel.Information);
+});
+
+var logger = loggerFactory.CreateLogger("NotificationWorker");
+
 using var metricServer = new KestrelMetricServer(port: 8080);
 metricServer.Start();
 
@@ -53,7 +65,7 @@ Console.CancelKeyPress += (_, e) =>
     cts.Cancel();
 };
 
-Console.WriteLine($"Listening for notifications on '{string.Join("', '", topics)}'...");
+logger.LogInformation("Listening for notifications on '{Topics}'.", string.Join("', '", topics));
 
 try
 {
@@ -68,6 +80,13 @@ try
             var message = JsonSerializer.Deserialize<NotificationMessage>(result.Message.Value);
             if (message == null)
                 continue;
+
+            logger.LogInformation(
+                "Notification consumed {EventType} user {UserId} offer {OfferId} correlation {CorrelationId}.",
+                message.EventType,
+                message.UserId,
+                message.OfferId,
+                message.CorrelationId);
 
             if (smtpEnabled)
             {
@@ -90,14 +109,21 @@ try
                 catch (Exception ex)
                 {
                     emailSendErrors.Inc();
-                    Console.WriteLine($"SMTP send error: {ex.Message}");
+                    logger.LogWarning(
+                        ex,
+                        "SMTP send error for correlation {CorrelationId} to {ToEmail}.",
+                        message.CorrelationId,
+                        message.ToEmail);
                 }
             }
             else
             {
-                Console.WriteLine($"SMTP not configured; skipping send to {message.ToEmail}");
-                Console.WriteLine($"Subject: {message.Subject}");
-                Console.WriteLine($"Body: {message.Body}");
+                logger.LogInformation(
+                    "SMTP not configured; skipping send to {ToEmail} for correlation {CorrelationId}.",
+                    message.ToEmail,
+                    message.CorrelationId);
+                logger.LogInformation("Subject: {Subject}", message.Subject);
+                logger.LogInformation("Body: {Body}", message.Body);
             }
 
             messagesConsumed.Inc();
@@ -105,7 +131,7 @@ try
         catch (ConsumeException ex)
         {
             consumeErrors.Inc();
-            Console.WriteLine($"Kafka consume error: {ex.Error.Reason}");
+            logger.LogWarning(ex, "Kafka consume error: {Reason}", ex.Error.Reason);
         }
     }
 }
@@ -123,4 +149,7 @@ public record NotificationMessage(
     string ToEmail,
     string Subject,
     string Body,
-    DateTime OccurredAtUtc);
+    DateTime OccurredAtUtc,
+    string CorrelationId,
+    int? UserId,
+    int? OfferId);

@@ -4,6 +4,7 @@ using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Models;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,16 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
     {
         private readonly ExchangeDbContext _db;
         private readonly INotificationProducer _notificationProducer;
+        private readonly ILogger<UsersController> _logger;
 
-        public UsersController(ExchangeDbContext db, INotificationProducer notificationProducer)
+        public UsersController(
+            ExchangeDbContext db,
+            INotificationProducer notificationProducer,
+            ILogger<UsersController> logger)
         {
             _db = db;
             _notificationProducer = notificationProducer;
+            _logger = logger;
         }
 
 
@@ -104,12 +110,22 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             authenticatedUser.Password = dto.NewPassword;
             await _db.SaveChangesAsync();
 
+            var correlationId = GetCorrelationId();
+
+            _logger.LogInformation(
+                "User password changed {UserId} correlation {CorrelationId}.",
+                authenticatedUser.Id,
+                correlationId);
+
             await _notificationProducer.PublishAsync(new NotificationMessage(
                 "UserPasswordChanged",
                 authenticatedUser.Email,
                 "Password changed",
                 "Your password was updated successfully.",
-                DateTime.UtcNow));
+                DateTime.UtcNow,
+                correlationId,
+                authenticatedUser.Id,
+                null));
 
             return NoContent();
         }
@@ -220,6 +236,16 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
         {
             Response.Headers["WWW-Authenticate"] = "Basic realm=\"users\"";
             return Unauthorized(new { error = "Basic authentication required." });
+        }
+
+        private string GetCorrelationId()
+        {
+            if (HttpContext.Items.TryGetValue("CorrelationId", out var value) && value is string correlationId)
+            {
+                return correlationId;
+            }
+
+            return Guid.NewGuid().ToString("N");
         }
     }
 

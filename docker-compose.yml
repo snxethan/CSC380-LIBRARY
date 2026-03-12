@@ -118,10 +118,36 @@ services:
     networks:
       - exchange-net
 
+  loki:
+    image: grafana/loki:2.9.8
+    command:
+      - -config.file=/etc/loki/loki-config.yml
+    ports:
+      - "3100:3100"
+    volumes:
+      - ./loki/loki-config.yml:/etc/loki/loki-config.yml
+      - loki-data:/loki
+    networks:
+      - exchange-net
+
+  promtail:
+    image: grafana/promtail:2.9.8
+    command:
+      - -config.file=/etc/promtail/promtail-config.yml
+    depends_on:
+      - loki
+    volumes:
+      - ./promtail/promtail-config.yml:/etc/promtail/promtail-config.yml
+      - /var/lib/docker/containers:/var/lib/docker/containers:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+      - exchange-net
+
   grafana:
     image: grafana/grafana-oss:10.4.3
     depends_on:
       - prometheus
+      - loki
     environment:
       GF_SECURITY_ADMIN_USER: admin
       GF_SECURITY_ADMIN_PASSWORD: admin
@@ -137,6 +163,7 @@ services:
 volumes:
   exchange-data:
   grafana-data:
+  loki-data:
 
 networks:
   exchange-net:

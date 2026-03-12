@@ -4,6 +4,8 @@ using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Prometheus;
+using System;
+using System.Collections.Generic;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +38,26 @@ if (!disableHttpsRedirection)
 {
     app.UseHttpsRedirection();
 }
+
+app.Use(async (context, next) =>
+{
+    var correlationId = context.Request.Headers["X-Correlation-ID"].ToString();
+    if (string.IsNullOrWhiteSpace(correlationId))
+    {
+        correlationId = Guid.NewGuid().ToString("N");
+    }
+
+    context.Items["CorrelationId"] = correlationId;
+    context.Response.Headers["X-Correlation-ID"] = correlationId;
+
+    using (app.Logger.BeginScope(new Dictionary<string, object>
+    {
+        ["correlationId"] = correlationId
+    }))
+    {
+        await next();
+    }
+});
 
 app.Use(async (context, next) =>
 {

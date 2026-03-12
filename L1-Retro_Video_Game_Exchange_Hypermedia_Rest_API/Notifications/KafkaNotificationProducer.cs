@@ -38,11 +38,22 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications
             {
                 var payload = JsonSerializer.Serialize(message);
                 var topic = ResolveTopic(message.EventType);
+                _logger.LogInformation(
+                    "Publishing notification {EventType} for user {UserId} offer {OfferId} correlation {CorrelationId} to topic {Topic}.",
+                    message.EventType,
+                    message.UserId,
+                    message.OfferId,
+                    message.CorrelationId,
+                    topic);
                 await _producer.ProduceAsync(topic, new Message<Null, string> { Value = payload }, cancellationToken);
             }
             catch (Exception ex)
             {
-                _logger.LogWarning(ex, "Failed to publish notification message.");
+                _logger.LogWarning(
+                    ex,
+                    "Failed to publish notification message for event {EventType} correlation {CorrelationId}.",
+                    message.EventType,
+                    message.CorrelationId);
             }
         }
 

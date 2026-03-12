@@ -4,6 +4,7 @@ using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Models;
 using L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +19,16 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
     {
         private readonly ExchangeDbContext _db;
         private readonly INotificationProducer _notificationProducer;
+        private readonly ILogger<TradeOffersController> _logger;
 
-        public TradeOffersController(ExchangeDbContext db, INotificationProducer notificationProducer)
+        public TradeOffersController(
+            ExchangeDbContext db,
+            INotificationProducer notificationProducer,
+            ILogger<TradeOffersController> logger)
         {
             _db = db;
             _notificationProducer = notificationProducer;
+            _logger = logger;
         }
 
         // POST api/tradeoffers  (create trade offer)
@@ -62,6 +68,13 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
 
             _db.TradeOffers.Add(offer);
             await _db.SaveChangesAsync();
+
+            _logger.LogInformation(
+                "Trade offer created {OfferId} requester {RequesterUserId} owner {OwnerUserId} correlation {CorrelationId}.",
+                offer.Id,
+                offer.RequesterUserId,
+                offer.OwnerUserId,
+                GetCorrelationId());
 
             await NotifyTradeOfferAsync(
                 offer,
@@ -173,6 +186,13 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
 
             await _db.SaveChangesAsync();
 
+            _logger.LogInformation(
+                "Trade offer responded {OfferId} status {Status} owner {OwnerUserId} correlation {CorrelationId}.",
+                offer.Id,
+                offer.Status,
+                offer.OwnerUserId,
+                GetCorrelationId());
+
             if (decision == TradeOfferStatus.Accepted)
             {
                 await NotifyTradeOfferAsync(
@@ -266,26 +286,55 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Controllers
             var owner = await _db.Users.FindAsync(offer.OwnerUserId);
 
             var occurredAt = DateTime.UtcNow;
+            var correlationId = GetCorrelationId();
 
             if (requester != null)
             {
+                _logger.LogInformation(
+                    "Publishing trade offer notification {EventType} for user {UserId} offer {OfferId} correlation {CorrelationId}.",
+                    eventType,
+                    requester.Id,
+                    offer.Id,
+                    correlationId);
                 await _notificationProducer.PublishAsync(new NotificationMessage(
                     eventType,
                     requester.Email,
                     subject,
                     body,
-                    occurredAt));
+                    occurredAt,
+                    correlationId,
+                    requester.Id,
+                    offer.Id));
             }
 
             if (owner != null)
             {
+                _logger.LogInformation(
+                    "Publishing trade offer notification {EventType} for user {UserId} offer {OfferId} correlation {CorrelationId}.",
+                    eventType,
+                    owner.Id,
+                    offer.Id,
+                    correlationId);
                 await _notificationProducer.PublishAsync(new NotificationMessage(
                     eventType,
                     owner.Email,
                     subject,
                     body,
-                    occurredAt));
+                    occurredAt,
+                    correlationId,
+                    owner.Id,
+                    offer.Id));
             }
+        }
+
+        private string GetCorrelationId()
+        {
+            if (HttpContext.Items.TryGetValue("CorrelationId", out var value) && value is string correlationId)
+            {
+                return correlationId;
+            }
+
+            return Guid.NewGuid().ToString("N");
         }
     }
 

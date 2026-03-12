@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,44 @@
       "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\tradeofferscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\kafkanotificationproducer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\notifications\\notificationmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|c:\\projects\\neu\\y3\\q2\\csc380\\csc380-library\\l1-retro_video_game_exchange_hypermedia_rest_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF753E93-DC89-D5FA-3B3D-5C541FE3192E}|L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API.csproj|solutionrelative:l1-retro_video_game_exchange_hypermedia_rest_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NotificationWorker\\NotificationWorker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:loki\\loki-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:promtail\\promtail-config.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:grafana\\provisioning\\datasources\\loki-datasource.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 178,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -40,7 +68,7 @@
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAA0AAAAAAAAAAIBJwIcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAI4AAAAAAAAAAIBJwKgAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
               "WhenOpened": "2026-01-30T22:01:36.661Z",
               "IsPinned": true,
@@ -48,16 +76,120 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TradeOffersController.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
               "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\TradeOffersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAABBwGEBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-30T22:00:49.634Z",
               "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "promtail-config.yml",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml",
+              "RelativeDocumentMoniker": "promtail\\promtail-config.yml",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\promtail\\promtail-config.yml",
+              "RelativeToolTip": "promtail\\promtail-config.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-03-12T04:28:41.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "loki-config.yml",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml",
+              "RelativeDocumentMoniker": "loki\\loki-config.yml",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\loki\\loki-config.yml",
+              "RelativeToolTip": "loki\\loki-config.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-03-12T04:28:37.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NotificationWorker.csproj",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
+              "RelativeDocumentMoniker": "NotificationWorker\\NotificationWorker.csproj",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\NotificationWorker.csproj",
+              "RelativeToolTip": "NotificationWorker\\NotificationWorker.csproj",
+              "ViewState": "AgIAAAoAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-12T04:28:21.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T04:28:07.658Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T04:28:00.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeDocumentMoniker": "NotificationWorker\\Program.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
+              "RelativeToolTip": "NotificationWorker\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T04:05:11.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "loki-datasource.yml",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml",
+              "RelativeDocumentMoniker": "grafana\\provisioning\\datasources\\loki-datasource.yml",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\grafana\\provisioning\\datasources\\loki-datasource.yml",
+              "RelativeToolTip": "grafana\\provisioning\\datasources\\loki-datasource.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-03-12T04:28:46.347Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NotificationMessage.cs",
+              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\NotificationMessage.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T04:27:29.059Z",
               "EditorCaption": ""
             },
             {
@@ -106,31 +238,17 @@
               "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Controllers\\GameController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T00:29:25.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T00:29:25.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
-              "RelativeDocumentMoniker": "NotificationWorker\\Program.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\NotificationWorker\\Program.cs",
-              "RelativeToolTip": "NotificationWorker\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T04:05:11.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "KafkaNotificationProducer.cs",
               "DocumentMoniker": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
               "RelativeDocumentMoniker": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
-              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs*",
-              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABIAAAAAAAAAA==",
+              "ToolTip": "C:\\projects\\NEU\\Y3\\Q2\\CSC380\\CSC380-LIBRARY\\L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "RelativeToolTip": "L1-Retro_Video_Game_Exchange_Hypermedia_Rest_API\\Notifications\\KafkaNotificationProducer.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAIBJwBcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T04:03:40.314Z",
               "EditorCaption": ""

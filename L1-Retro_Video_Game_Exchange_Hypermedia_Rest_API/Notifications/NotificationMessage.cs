@@ -5,5 +5,8 @@ namespace L1_Retro_Video_Game_Exchange_Hypermedia_Rest_API.Notifications
         string ToEmail,
         string Subject,
         string Body,
-        DateTime OccurredAtUtc);
+        DateTime OccurredAtUtc,
+        string CorrelationId,
+        int? UserId,
+        int? OfferId);
 }
